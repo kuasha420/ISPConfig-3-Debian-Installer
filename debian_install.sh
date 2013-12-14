@@ -80,15 +80,15 @@ echo "$HOSTNAMESHORT" > /etc/hostname
 #Updates server and install commonly used utilities
 cp /etc/apt/sources.list /etc/apt/sources.list.backup
 cat > /etc/apt/sources.list <<EOF
-deb http://ftp.de.debian.org/debian/ wheezy main contrib non-free
-deb-src http://ftp.de.debian.org/debian/ wheezy main contrib non-free
+deb http://ftp.us.debian.org/debian/ wheezy main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ wheezy main contrib non-free
 
 deb http://security.debian.org/ wheezy/updates main contrib non-free
 deb-src http://security.debian.org/ wheezy/updates main contrib non-free
 
 # wheezy-updates, previously known as 'volatile'
-deb http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free
-deb-src http://ftp.de.debian.org/debian/ wheezy-updates main contrib non-free
+deb http://ftp.us.debian.org/debian/ wheezy-updates main contrib non-free
+deb-src http://ftp.us.debian.org/debian/ wheezy-updates main contrib non-free
 
 # DotDeb
 deb http://packages.dotdeb.org wheezy all
